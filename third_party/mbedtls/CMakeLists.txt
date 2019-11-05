@@ -96,3 +96,5 @@ set_property( TARGET mbedtls PROPERTY FOLDER third_party )
 source_group( include\\mbedtls FILES ${MBEDTLS_HEADERS} )
 source_group( source FILES ${MBEDTLS_SOURCES} )
 source_group( "" FILES iot_config_mbedtls.h threading_alt.h iot_mbedtls_threading.c )
+
+install(TARGETS mbedtls DESTINATION lib)

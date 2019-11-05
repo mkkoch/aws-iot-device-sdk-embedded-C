@@ -36,6 +36,8 @@ source_group( include\\types include/types/aws_iot_jobs_types.h )
 source_group( src\\private src/private/aws_iot_jobs_internal.h )
 source_group( src FILES ${JOBS_SOURCES} )
 
+install(TARGETS awsiotjobs DESTINATION lib)
+
 # Build the test executable if needed.
 if( ${IOT_BUILD_TESTS} )
     # Jobs system test sources.

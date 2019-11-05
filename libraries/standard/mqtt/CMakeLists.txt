@@ -35,6 +35,8 @@ source_group( include\\types FILES include/types/iot_mqtt_types.h )
 source_group( src FILES ${MQTT_SOURCES} )
 source_group( src\\private FILES src/private/iot_mqtt_internal.h )
 
+install(TARGETS iotmqtt DESTINATION lib)
+
 # Build the test executable if needed.
 if( ${IOT_BUILD_TESTS} )
     # Enable test access in MQTT.

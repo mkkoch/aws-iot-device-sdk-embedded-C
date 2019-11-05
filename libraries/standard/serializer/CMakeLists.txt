@@ -31,6 +31,8 @@ source_group( include FILES
               include/iot_json_utils.h )
 source_group( src FILES ${SERIALIZER_SOURCES} )
 
+install(TARGETS iotserializer DESTINATION lib)
+
 # Build the test executable if needed.
 if( ${IOT_BUILD_TESTS} )
     # Serializer unit test sources.

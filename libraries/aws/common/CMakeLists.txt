@@ -27,3 +27,5 @@ set_property( TARGET awsiotcommon PROPERTY FOLDER libraries/aws )
 source_group( "" FILES ${CONFIG_HEADER_PATH}/iot_config.h )
 source_group( include FILES include/aws_iot.h )
 source_group( src FILES ${AWS_IOT_COMMON_SOURCES} )
+
+install(TARGETS awsiotcommon DESTINATION lib)

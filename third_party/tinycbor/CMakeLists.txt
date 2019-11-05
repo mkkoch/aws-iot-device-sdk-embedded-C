@@ -60,3 +60,5 @@ target_compile_options( tinycbor
 set_property( TARGET tinycbor PROPERTY FOLDER third_party )
 source_group( include FILES ${TINYCBOR_HEADERS} )
 source_group( source FILES ${TINYCBOR_SOURCES} )
+
+install(TARGETS tinycbor DESTINATION lib)
